@@ -52,7 +52,7 @@ bot(
       // )
     }
     if (match == 'on' || match == 'off') {
-      if (match == 'off' && !antilink) return await message.send('_AntiLink is not enabled._')
+      if (match == 'off' && !antilink) return await message.send('_NZI-MD says `AntiLink is not enabled._`')
       await setAntiLink(message.jid, match == 'on')
       return await message.send(`_AntiLink ${match == 'on' ? 'Enabled' : 'Disabled.'}_`)
     }
@@ -65,7 +65,7 @@ bot(
     if (match.startsWith('action/')) {
       await setAntiLink(message.jid, match)
       const action = match.replace('action/', '')
-      if (!['warn', 'kick', 'null'].includes(action)) return await message.send('*Invalid action*')
+      if (!['warn', 'kick', 'null'].includes(action)) return await message.send('*NZI-MD says that`s an Invalid action*')
       return await message.send(`_AntiLink action updated as ${action}_`)
     }
     const res = await setAntiLink(message.jid, match)
