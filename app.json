@@ -1,6 +1,7 @@
 {
   "name": "Nzi@5.2.3",
-  "description": "",
+  "description": "Nzi-Bot-MD is an efficient and versatile WhatsApp bot designed to streamline your messaging experience",
+  "logo": "https://github.com/Sachoni/levanter/blob/master/lib/class/Nzi%20MD%20pic.png",
   "keywords": ["noedjs"],
   "success_url": "/",
   "env": {
@@ -19,10 +20,27 @@
       "required": false,
       "value": "254736429306"
     },
+     "AUDIO_DATA": {
+      "description": "Enter Your Owner Name",
+      "required": false,
+      "value": "https://github.com/Sachoni/levanter/blob/master/lib/class/Ngoma%5B1%5D.jpg"
+    },
     "PREFIX": {
       "description": "prefix, check for more",
       "required": false,
       "value": "."
+    },
+      "ThemeEmoji": {
+      "description": "😈",
+      "required": true 
+    },
+       "Owner_Name": {
+       "description": "Mark",
+       "required": true
+    },
+     "Web": {
+     "description": "Enter your social profile url",
+     "required": false
     },
     "SESSION_ID": {
       "description": "session id",
@@ -111,6 +129,16 @@
       "description": "Accept Group join request(Group privacy)",
       "required": false,
       "value": "true"
+    },
+    "AUTO_TYPING": {
+      "description": "make it true if you want bot to show typing",
+      "required": true,
+      "value": "true"
+    },
+    "AUTO_RECORDING": {
+      "description": "make it true if you want bot to show recording audio",
+      "required": false,
+      "value": "false"
     },
     "PERSONAL_MESSAGE": {
       "description": "Send a Welcome message on personal chat",
