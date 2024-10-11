@@ -1,3 +1,6 @@
+const AUDIO_DATA = process.env.AUDIO_DATA || "https://github.com/Sachoni/levanter/blob/master/lib/class/Ngoma%5B1%5D.jpg";
+const STICKER_DATA = process.env.STICKER_DATA || "Nzi-BOT";
+const BOT_INFO = process.env.BOT_INFO || "https://github.com/Sachoni/levanter/blob/master/lib/class/Nzi%20MD%20pic.png";
 const toBool = (x) => x == 'true'
 const { Sequelize } = require('sequelize')
 const { existsSync } = require('fs')
@@ -27,6 +30,15 @@ module.exports = {
           },
           logging: false,
         }),
+   /**
+     * thumbnails and medias
+     */
+    image_1: readFileSync('./lib/class/Logohead.jpg'), // primary image
+    image_2: readFileSync('./lib/class/Logohead.jpg'), // secondry image
+    imageUrl: "https://github.com/Sachoni/levanter/blob/master/lib/class/Nzi%20MD%20pic.png", // image url, to replace to your url upload your image to https://imgbb.com
+    imageMentionUrl: "https://github.com/Sachoni/levanter/blob/master/lib/class/Nzi%20MD%20pic.png", // image for mention reply audio media
+    ownerMentionMp3: readFileSync('./lib/Assets/ownerMentionMp3.mp3'),  // audio for mention reply audio media
+
   HANDLERS: (process.env.PREFIX || '^[.,!]').trim(),
   SUDO: process.env.SUDO || '254736429306',
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME,
