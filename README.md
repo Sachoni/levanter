@@ -2,6 +2,11 @@
 
 A simple WhatsApp User bot.
 
+<p align="center">
+<img src="https://github.com/Sachoni/Nzi-V13/blob/9e01fca2911a30bfb8b6dd549988a6099d139dc9/Img/Screenshot_20240919_190110_CapCut.jpg"/>
+
+</p>
+
 ## Setup
 
 ### 1. Deploy on Heroku
