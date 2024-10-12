@@ -1,3 +1,4 @@
+const LOGO = "https://github.com/Sachoni/levanter/lib/class/Nzi MD pic.png";
 const { setCmd, bot, getCmd, delCmd } = require('../lib/index')
 
 bot(
