@@ -9,6 +9,7 @@ bot(
   async (message, match) => {
     const poll = match.split(',')
     if (poll.length < 3) return await message.send('*Example : question,option1,option2,...*')
+    const LOGO = "https://github.com/Sachoni/levanter/blob/master/lib/class/Weather.jpg";
     const name = poll[0]
     const options = []
     for (let i = 1; i < poll.length; i++) options.push({ optionName: poll[i] })
