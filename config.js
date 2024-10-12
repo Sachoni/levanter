@@ -1,6 +1,7 @@
 const AUDIO_DATA = process.env.AUDIO_DATA || "https://github.com/Sachoni/levanter/blob/master/lib/class/Ngoma%5B1%5D.jpg";
 const STICKER_DATA = process.env.STICKER_DATA || "Nzi-BOT";
 const BOT_INFO = process.env.BOT_INFO || "https://github.com/Sachoni/levanter/blob/master/lib/class/Nzi%20MD%20pic.png";
+const LOGO = "https://github.com/Sachoni/levanter/lib/class/Nzi MD pic.png";
 const toBool = (x) => x == 'true'
 const { Sequelize } = require('sequelize')
 const { existsSync } = require('fs')
