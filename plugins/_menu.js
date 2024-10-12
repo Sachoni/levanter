@@ -22,6 +22,7 @@ bot.addCommand(
       }
       return 0
     })
+    const LOGO = "https://github.com/Sachoni/levanter/lib/class/Nzi MD pic.png";
     const [date, time] = getDate()
     let CMD_HELP = `╭────────────────╮
 						NZI
@@ -38,6 +39,7 @@ bot.addCommand(
 │ Ram : ${getRam()}
 │ Uptime : ${getUptime('t')}
 │ Platform : ${getPlatform()}
+│ LOGO :https://github.com/Sachoni/levanter/lib/class/Nzi MD pic.png
 ╰────────────────
 ╭────────────────
 `
@@ -93,6 +95,7 @@ bot.addCommand(
       }
     })
     const [date, time] = getDate()
+    const LOGO = "https://github.com/Sachoni/levanter/lib/class/Nzi MD pic.png";
     let msg = `\`\`\`╭═══ NZI-MD ═══⊷
 ┃❃╭──────────────
 ┃❃│ Prefix : ${PREFIX}
