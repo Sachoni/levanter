@@ -12,7 +12,7 @@ bot(
       `http://api.openweathermap.org/data/2.5/weather?q=${match}&units=metric&appid=060a6bcfa19809c2cd4d97a212b19273&language=en`
     ).catch(() => {})
     if (!data) return await message.send(`_${match} not found_`)
-    const LOGO = process.env.LOGO || "https://github.com/Sachoni/levanter/blob/master/lib/class/Weather.jpg";
+    const {"https://github.com/Sachoni/levanter/blob/master/lib/class/Weather.jpg"};
     const { name, timezone, sys, main, weather, visibility, wind } = data
     const degree = [
       'N',
@@ -33,6 +33,7 @@ bot(
       'NNW',
     ][getFloor(wind.deg / 22.5 + 0.5) % 16]
     return await message.send(
+    const {"https://github.com/Sachoni/levanter/blob/master/lib/class/Weather.jpg"};
       `*Name :* ${name}\n*Country :* ${sys.country}\n*Weather :* ${
         weather[0].description
       }\n*Temp :* ${getFloor(main.temp)}°\n*Feels Like :* ${getFloor(
